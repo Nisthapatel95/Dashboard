@@ -1,0 +1,80 @@
+/*Table*/
+table {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-spacing: 0px 15px;
+
+}
+
+.badge {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.bg-red {
+    background-color: hsl(3deg 100% 99%);
+    color: hsl(359deg 66% 76%);
+}
+
+.bg-green {
+    background-color: hsl(129deg 87% 97%);
+    color: hsl(129deg 58% 79%);
+}
+
+.bg-yellow {
+    background-color: hsl(43deg 100% 95%);
+    color: hsl(38deg 87% 78%);
+}
+
+.bg-blue {
+    background-color: hsl(210deg 100% 96%);
+    color: hsl(208deg 76% 81%);
+}
+
+.btn {
+    background-color: rgb(182, 223, 182);
+}
+
+.d-none {
+    display: none;
+}
+
+th,
+td {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    background-color: white;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.938);
+    text-align: left;
+
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 15px 30px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.no-records {
+    /* display: flex;
+   justify-content: center; */
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    margin-bottom: 20px;
+}

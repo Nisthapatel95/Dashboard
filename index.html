@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Dashboard Assessment</title>
+</head>
+
+<body>
+    <div class="d-flex flex-direction h-100 ">
+        <header class="header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- header section Start -->
+
+
+                    <label for="toggleSidebar"><span class="material-symbols-outlined">
+                            library_add
+                        </span></label>
+
+                    <div class="das">
+                        <h3>Dashboard</h3>
+                    </div>
+                </div>
+                <!--action-->
+                <div class="action-bar">
+                    <ul class="d-flex action-bar align-item-center">
+                        <a href="" class="notification">
+                            <span class="fa fa-bell  "></span>
+                        </a>
+                        <a class="dropdown d-flex align-items-center">
+                            <div class="profile-wrap">
+                                <img src="img.png">
+                            </div>
+
+                        </a>
+                        <a href="" class="notification"></a>
+                        John Doe
+                        <span class="fa fa-caret-down"></span>
+
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header section end -->
+        <section class="d-flex  h-100 w-100 ">
+            <!-- sidebar section  start-->
+
+            <input type="checkbox" id="toggleSidebar">
+            <aside id="sidebar" class=" sidebar-wrapper  h-100 d-flex">
+                <div class=" d-flex flex-column sidebar align-item h-100 w-100">
+                    <div class=" d-flex flex-direction align-item side-top h-100 w-100 ">
+                        <h3>GENERAL</h3>
+                        <ul class="nav-list w-100 h-100 ">
+                            <li class="nav-item active">
+                                <a href=""></a>
+                                <span class="fa fa-search icon "></span>
+                                <span class="nav-text icon">Search</span>
+
+
+                            </li>
+                            <li class="nav-item">
+                                <a href=""></a>
+                                <span class="fa fa-bell icon "></span>
+                                <span class="nav-text icon">Alert</span>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href=""></a><span class="fa fa-tag icon"></span>
+                                <span class="nav-text icon">Tag</span>
+
+                            <!-- </li -->
+
+                        </ul>
+                    </div>
+                    <div class="side-bottom h-100 w-100">
+                        <h3>OTHERS</h3>
+                        <ul class="nav-list ">
+                            <li class="nav-item"> <a href=""></a>
+                                <span class="fa fa-gear icon"></span>
+                                <span class="nav-text icon">Setting</span>
+
+                            </li>
+                            <li class="nav-item"><a href=""></a>
+                                <span class="fa fa-address-book icon"></span>
+                                <span class="nav-text icon">Tips</span>
+
+                            </li>
+                            <li class="nav-item"><a href=""></a>
+                                <span class="fa fa-trash icon"></span>
+                                <span class="nav-text icon">Trash</span>
+
+                            </li>
+                            <li class="nav-item"><a href=""> </a>
+                                <span class="fa fa-sign-out  icon"></span>
+                                <span class="nav-text icon">logout</span>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- sidebar section  end-->
+            <!--Table-->
+            <main class="h-100 w-100 main-wrapper">
+                <div class="d-flex justify-content-between">
+                    <div></div>
+                    <div><input type="text" placeholder="Search here" id="search-box" onkeyup="filterUser()">
+                        <input type="button" class="btn" value="Filter" onclick="filterUser()"><br>
+                    </div>
+                </div>
+
+
+                <h2>Recent Activity</h2>
+
+                <div class="d-table">
+
+                    <table id="user-table">
+                        <thead>
+                            <th>Item</th>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Est.Cost</th>
+                            <th>Last</th>
+                            <th>List</th>
+                            <th>Auto</th>
+                            <th>Buy Now</th>
+                        </thead>
+                        <tbody id="user-table-body">
+
+                        </tbody>
+                    </table>
+                    <div class="no-records d-none">No records found</div>
+                </div>
+
+            </main>
+        </section>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
